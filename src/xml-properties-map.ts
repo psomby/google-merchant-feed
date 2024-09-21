@@ -52,8 +52,10 @@ export const xmlPropertiesMap: Record<keyof Product, XmlPropertiesMapNode> = {
   price: {
     xmlName: "g:price",
     xmlFormatter: Price.formatter,
+    allowRepeat: true
   },
   salePrice: { xmlName: "g:sale_price", xmlFormatter: Price.formatter },
+
   salePriceEffectiveDate: {
     xmlName: "g:sale_price_effective_date",
     xmlFormatter: DateRange.formatter,
